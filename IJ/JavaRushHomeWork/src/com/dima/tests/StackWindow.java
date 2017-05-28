@@ -1,0 +1,45 @@
+package com.dima.tests;
+import java.awt.*;
+import java.io.*;
+import javax.swing.*;
+/**
+ * Created by Dima on 11.03.2016.
+ */
+//
+
+
+public class StackWindow extends JFrame
+            implements Thread.UncaughtExceptionHandler {
+
+        private JTextArea textArea;
+
+        public StackWindow(
+                String title, final int width, final int height) {
+            super(title);
+            setSize(width, height);
+            textArea = new JTextArea();
+            JScrollPane pane = new JScrollPane(textArea);
+            textArea.setEditable(false);
+            getContentPane().add(pane);
+        }
+
+        public void uncaughtException(Thread t, Throwable e) {
+            addStackInfo(e);
+        }
+
+        public void addStackInfo(final Throwable t) {
+            EventQueue.invokeLater(new Runnable() {
+                public void run() {
+                    setVisible(true);
+                    toFront();
+                    StringWriter sw = new StringWriter();
+                    PrintWriter out = new PrintWriter(sw);
+                    t.printStackTrace(out);
+                    textArea.append(sw.toString());
+                }
+            });
+        }
+    }
+
+
+
