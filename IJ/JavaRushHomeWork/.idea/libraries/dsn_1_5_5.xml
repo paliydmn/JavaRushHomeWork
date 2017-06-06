@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="dsn-1.5.5">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/dsn-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/gimap-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/imap-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/javax.mail-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/javax.mail-api-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/logging-mailhandler-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/mailapi-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/pop3-1.5.5.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/smtp-1.5.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/mailLibs/javax.mail-1.5.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
